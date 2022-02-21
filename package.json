@@ -13,8 +13,7 @@
     "build": "node build.js",
     "predeploy": "tsc --noEmit && npm run build",
     "deploy": "npx serverless deploy --aws-profile default",
-    "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.92",
