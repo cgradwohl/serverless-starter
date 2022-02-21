@@ -5,10 +5,7 @@ export default async function exampleHandler(
   context: AWSLambda.Context
 ): Promise<AWSLambda.APIGatewayProxyStructuredResultV2> {
   return {
-    statusCode:
-    
-    
-    200,
+    statusCode: 200,
     body: JSON.stringify({ event, context }),
   };
 }
