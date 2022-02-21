@@ -13,6 +13,6 @@ package:
 functions:
   example:
     description: An example lambda function
-    handler: dist/example.handler
+    handler: dist/example.default
     events:
       - http: GET /example

@@ -1,6 +1,6 @@
 import * as AWSLambda from "aws-lambda";
 
-export default async function exampleHandler(
+export default async function handler(
   event: AWSLambda.APIGatewayProxyEvent,
   context: AWSLambda.Context
 ): Promise<AWSLambda.APIGatewayProxyStructuredResultV2> {
