@@ -12,7 +12,7 @@
   "scripts": {
     "build": "node build.js",
     "predeploy": "tsc --noEmit && npm run build",
-    "deploy": "npx serverless deploy --aws-profile personal",
+    "deploy": "npx serverless deploy --aws-profile default",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install"
   },
