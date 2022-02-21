@@ -1,0 +1,19 @@
+# https://adieuadieu.medium.com/using-esbuild-in-your-serverless-framework-project-13723db5e32a
+service: axiom-serverless-starter
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+package:
+  excludeDevDependencies: false
+  patterns:
+    - '!./**'
+    - './dist/**'
+
+functions:
+  example:
+    description: An example lambda function
+    handler: dist/example.handler
+    events:
+      - http: GET /example

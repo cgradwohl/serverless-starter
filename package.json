@@ -1,0 +1,25 @@
+{
+  "name": "axiom-serverless",
+  "description": "esbuild, typescript, jest, husky, eslint, aws-lambda",
+  "author": "Christopher S. Gradwohl",
+  "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgradwohl/axiom.git"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "predeploy": "npm run build",
+    "deploy": "serverless deploy"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.92",
+    "esbuild": "0.14.23",
+    "js-yaml": "4.1.0",
+    "serverless": "3.2.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.5.5"
+  }
+}
