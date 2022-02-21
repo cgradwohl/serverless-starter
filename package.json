@@ -13,11 +13,13 @@
     "build": "node build.js",
     "predeploy": "tsc --noEmit && npm run build",
     "deploy": "npx serverless deploy --aws-profile personal",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.92",
     "esbuild": "0.14.23",
+    "husky": "^7.0.4",
     "js-yaml": "4.1.0",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
