@@ -1,4 +1,3 @@
-# https://adieuadieu.medium.com/using-esbuild-in-your-serverless-framework-project-13723db5e32a
 service: axiom-serverless-starter
 
 provider:

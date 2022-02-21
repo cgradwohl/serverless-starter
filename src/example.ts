@@ -1,5 +1,13 @@
 import * as AWSLambda from 'aws-lambda'
 
+interface Foo {
+  foo: "bar"
+}
+
+const foo: Foo = {
+
+}
+
 export default async function exampleHandler(
   event: AWSLambda.APIGatewayProxyEvent,
   context: AWSLambda.Context,
