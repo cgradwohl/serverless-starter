@@ -21,9 +21,10 @@ export const handler: Handler<LambdaEvent, LambdaResult> = async (
   event,
   context
 ): Promise<LambdaResult> => {
-  const { foo } = event.pathParameters;
+  const { foo } = event?.pathParameters ?? {};
 
   return {
+    statusCode: 200,
     body: JSON.stringify({ foo, event, context }),
   };
 };
