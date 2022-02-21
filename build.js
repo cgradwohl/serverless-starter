@@ -36,7 +36,7 @@ async function getConfig() {
       return fs.existsSync(path + ".ts") ? path + ".ts" : path + ".js";
     });
 
-  console.info("Building handlers..");
+  console.info("🤖 Building Handlers 🤖");
 
   await esbuild
     .build({
