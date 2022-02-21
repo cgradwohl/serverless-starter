@@ -2,25 +2,29 @@ import {
   Handler,
   APIGatewayProxyEventV2,
   APIGatewayProxyStructuredResultV2,
+  Context,
 } from "aws-lambda";
 
 interface LambdaEvent extends Omit<APIGatewayProxyEventV2, "pathParameters"> {
-  pathParameters: { productId?: string; userId: string };
+  pathParameters: { foo?: string };
 }
 
 interface LambdaResult extends Omit<APIGatewayProxyStructuredResultV2, "body"> {
-  products: any;
+  body: Stringified<{
+    foo: string | undefined;
+    event: LambdaEvent;
+    context: Context;
+  }>;
 }
 
 export const handler: Handler<LambdaEvent, LambdaResult> = async (
   event,
   context
 ): Promise<LambdaResult> => {
-  const { productId, userId } = event.pathParameters;
+  const { foo } = event.pathParameters;
 
   return {
-    statusCode: 200,
-    products: JSON.stringify({ productId, userId, event, context }),
+    body: JSON.stringify({ foo, event, context }),
   };
 };
 
