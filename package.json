@@ -13,12 +13,18 @@
     "build": "node build.js",
     "predeploy": "tsc --noEmit && npm run build",
     "deploy": "npx serverless deploy --aws-profile default",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.92",
     "esbuild": "0.14.23",
+    "husky": "^7.0.4",
     "js-yaml": "4.1.0",
+    "lint-staged": "^12.3.4",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
     "serverless": "3.2.1",
