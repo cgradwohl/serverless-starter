@@ -7,8 +7,8 @@ provider:
 package:
   excludeDevDependencies: false
   patterns:
-    - '!./**'
-    - './dist/**'
+    - "!./**"
+    - "./dist/**"
 
 functions:
   example:
