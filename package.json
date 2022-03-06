@@ -7,7 +7,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cgradwohl/axiom.git"
+    "url": "https://github.com/cgradwohl/serverless-starter"
   },
   "scripts": {
     "build": "node build.js",
