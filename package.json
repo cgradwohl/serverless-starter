@@ -1,6 +1,6 @@
 {
-  "name": "axiom-serverless",
-  "description": "esbuild, typescript, jest, husky, eslint, aws-lambda",
+  "name": "serverless-starter",
+  "description": "typescript, serverless framework, esbuild, jest, prettier, husky",
   "author": "Christopher S. Gradwohl",
   "version": "1.0.0",
   "license": "ISC",

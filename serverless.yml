@@ -1,4 +1,4 @@
-service: axiom-serverless-starter
+service: serverless-starter
 
 provider:
   name: aws

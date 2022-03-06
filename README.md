@@ -1,3 +1,3 @@
-# axiom
+# serverless-starter
 
-esbuild, typescript, jest, husky, eslint, aws-lambda
+typescript, serverless framework, esbuild, jest, prettier, husky
